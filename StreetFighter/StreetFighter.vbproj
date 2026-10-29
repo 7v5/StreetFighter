@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC722630-B9E2-45CD-B1D4-F213FF2A91C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>StreetFighter.My.MyApplication</StartupObject>
+    <RootNamespace>StreetFighter</RootNamespace>
+    <AssemblyName>StreetFighter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>StreetFighter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>StreetFighter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\p1Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\p1Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\p2Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\p2Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="punch.mp3" />
+    <None Include="res\back.png" />
+    <None Include="res\tutorial.png" />
+    <None Include="res\help.png" />
+    <None Include="res\mainmenu.png" />
+    <None Include="Resources\Titlescreen.jfif" />
+    <None Include="res\titlescreen.png" />
+    <None Include="res\start2.png" />
+    <None Include="res\exit2.png" />
+    <None Include="res\start.png" />
+    <None Include="res\exitimage.png" />
+    <None Include="res\HadoukenNoise.wav" />
+    <None Include="res\Kicking.wav" />
+    <None Include="res\Animations\Player 2\Right\2RDead.gif" />
+    <None Include="res\Animations\Player 2\Left\2LDead.gif" />
+    <None Include="res\Animations\Player 1\Right\1RDead.gif" />
+    <None Include="res\Animations\Player 1\Left\1LDead.gif" />
+    <None Include="res\hadouken.wav" />
+    <None Include="res\kick.wav" />
+    <None Include="res\HadoukenL.png" />
+    <None Include="res\HadoukenR.png" />
+    <None Include="res\Animations\Player 2\Right\2RStun.png" />
+    <None Include="res\Animations\Player 2\Left\2LStun.png" />
+    <None Include="res\Animations\Player 1\Right\1RStun.png" />
+    <None Include="res\Animations\Player 1\Left\1LStun.png" />
+    <None Include="res\Animations\Player 2\Right\2RCrouchBlock.gif" />
+    <None Include="res\Animations\Player 2\Right\2RCrouch.gif" />
+    <None Include="res\Animations\Player 2\Right\2RBlock.gif" />
+    <None Include="res\Animations\Player 2\Right\2RPunch.gif" />
+    <None Include="res\Animations\Player 2\Right\2RKick.gif" />
+    <None Include="res\Animations\Player 2\Right\2RIdleJump.gif" />
+    <None Include="res\Animations\Player 2\Right\2RIdle.gif" />
+    <None Include="res\Animations\Player 2\Right\2RHadouken.gif" />
+    <None Include="res\Animations\Player 2\Right\2RForwardJump.gif" />
+    <None Include="res\Animations\Player 2\Right\2RForward.gif" />
+    <None Include="res\Animations\Player 2\Right\2RCrouchTransition.gif" />
+    <None Include="res\Animations\Player 2\Right\2RCrouchPunch.gif" />
+    <None Include="res\Animations\Player 2\Right\2RCrouchKick.gif" />
+    <None Include="res\Animations\Player 2\Left\2lCrouchKick.gif" />
+    <None Include="res\Animations\Player 2\Left\2LCrouchBlock.gif" />
+    <None Include="res\Animations\Player 2\Left\2LCrouch.gif" />
+    <None Include="res\Animations\Player 2\Left\2LBlock.gif" />
+    <None Include="res\Animations\Player 2\Left\2LPunch.gif" />
+    <None Include="res\Animations\Player 2\Left\2LKick.gif" />
+    <None Include="res\Animations\Player 2\Left\2LIdleJump.gif" />
+    <None Include="res\Animations\Player 2\Left\2LIdle.gif" />
+    <None Include="res\Animations\Player 2\Left\2LHudoken.gif" />
+    <None Include="res\Animations\Player 2\Left\2LForward.gif" />
+    <None Include="res\Animations\Player 2\Left\2LForwadJump.gif" />
+    <None Include="res\Animations\Player 2\Left\2LCrouchTransition.gif" />
+    <None Include="res\Animations\Player 2\Left\2lCrouchPunch.gif" />
+    <None Include="res\Animations\Player 1\Right\1RCrouchKick.gif" />
+    <None Include="res\Animations\Player 1\Right\1RCrouchBlock.gif" />
+    <None Include="res\Animations\Player 1\Right\1RCrouch.gif" />
+    <None Include="res\Animations\Player 1\Right\1RBlock.gif" />
+    <None Include="res\Animations\Player 1\Right\1RPunch.gif" />
+    <None Include="res\Animations\Player 1\Right\1RKick.gif" />
+    <None Include="res\Animations\Player 1\Right\1RIdleJump.gif" />
+    <None Include="res\Animations\Player 1\Right\1RIdle.gif" />
+    <None Include="res\Animations\Player 1\Right\1RHadouken.gif" />
+    <None Include="res\Animations\Player 1\Right\1RForwardJump.gif" />
+    <None Include="res\Animations\Player 1\Right\1RForward.gif" />
+    <None Include="res\Animations\Player 1\Right\1RCrouchTransition.gif" />
+    <None Include="res\Animations\Player 1\Right\1RCrouchPunch.gif" />
+    <None Include="res\Animations\Player 1\Left\1LBlock.gif" />
+    <None Include="res\Animations\Player 1\Left\1LPunch.gif" />
+    <None Include="res\Animations\Player 1\Left\1LKick.gif" />
+    <None Include="res\Animations\Player 1\Left\1LIdleJump.gif" />
+    <None Include="res\Animations\Player 1\Left\1LIdle.gif" />
+    <None Include="res\Animations\Player 1\Left\1LHadouken.gif" />
+    <None Include="res\Animations\Player 1\Left\1LForwardJump.gif" />
+    <None Include="res\Animations\Player 1\Left\1LForward.gif" />
+    <None Include="res\Animations\Player 1\Left\1LCrouchTransition.gif" />
+    <None Include="res\Animations\Player 1\Left\1LCrouchPunch.gif" />
+    <None Include="res\Animations\Player 1\Left\1LCrouchKick.gif" />
+    <None Include="res\Animations\Player 1\Left\1LCrouchBlock.gif" />
+    <None Include="res\Animations\Player 1\Left\1LCrouch.gif" />
+    <None Include="Resources\1RIdle.bmp" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\pngegg2.png" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\2a9n.gif" />
+    <None Include="Resources\boom.bmp" />
+    <None Include="Resources\oof.wav" />
+    <None Include="res\floor.png" />
+    <None Include="res\punch.wav" />
+    <None Include="Resources\punch.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
